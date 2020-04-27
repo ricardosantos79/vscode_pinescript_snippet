@@ -1588,6 +1588,25 @@
 		],
 		"description": "for ()() loop statement"
 	},
+	"f_mtf_countdown_to_close_text()" : {
+		"scope": "pine, pinescript",
+		"prefix": "f_mtf_countdown_to_close_text()",
+		"body": [
+			"f_mtf_countdown_to_close_text(_tf)=>",
+			"\tint _open_date = valuewhen(change(time(_tf)) != 0, time, 0)",
+			"\tint _close_date = _open_date + round(f_tfResInMinutes(_tf)) * 60000",
+			"\tint _time_difference = _close_date - timenow",
+			"\tint _tina_minute = 60000, int _tina_hour = (60*_tina_minute), int _tina_day = (1440*_tina_minute), int _tina_week = (10080*_tina_minute), int _tina_month = (43800*_tina_minute)",
+			"\tint _month = _time_difference / _tina_month",
+			"\tint _weeks = (_time_difference % _tina_month) / _tina_week",
+			"\tint _days = ((_time_difference % _tina_month) % _tina_week) / _tina_day",
+			"\tint _hours = (((_time_difference % _tina_month) % _tina_week) % _tina_day) / _tina_hour",
+			"\tint _minutes = ((((_time_difference % _tina_month) % _tina_week) % _tina_day) % _tina_hour) / _tina_minute",
+			"\tstring _countdown = (_month >= 1 ? tostring(_month, ' #M ') : '') + (_weeks >= 1 ? tostring(_weeks, ' #W ') : '') + (_days >= 1 ? tostring(_days, ' #D ') : '') + (_hours >= 0 ? (_hours < 10 ? '0' : '') + tostring(_hours, '#') : '00') + (_minutes >= 0 ? (_minutes < 10 ? '0' : '') + tostring(_minutes, ':# ') : ':00')",
+			"\t_countdown"
+				],
+		"description": "for ()() loop statement"
+	},
 //-------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------
 	/////////////////////////////////
