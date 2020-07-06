@@ -1381,6 +1381,130 @@
 		"body": ["year(${1:time=${2}})$0"],
 		"description": "year (in exchange timezone) for provided UNIX time."
 	},
+	/////////////////////////////////
+	//*** UPDATE V4 - Arrays:   ***//
+	/////////////////////////////////
+	"array.clear()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.clear()",
+		"body": ["array.clear(${1:id=${2}})$0"],
+		"description": "The function removes all elements from an array."
+	},
+	"array.concat()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.concat()",
+		"body": ["array.concat(${1:id1=${2}}${3:, id2=${4}})$0"],
+		"description": "The function is used to merge two arrays. It pushes all elements from the second array to the first array, and returns the first array."
+	},
+	"array.copy()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.copy()",
+		"body": ["array.copy(${1:id=${2}})$0"],
+		"description": "The function creates a copy of an existing array."
+	},
+	"array.fill()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.fill()",
+		"body": ["array.fill(${1:id=${2}}${3:, value=${4}}${5:, index_from=${6}}${7:, index_to=${8}})$0"],
+		"description": "The function changes all elements in an array to a static value, from the start index (default 0) to the end index (default na)."
+	},
+	"array.get()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.get()",
+		"body": ["array.get(${1:id=${2}}${3:, index=${4}})$0"],
+		"description": "The function returns an element with the specified index."
+	},
+	"array.insert()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.insert()",
+		"body": ["array.insert(${1:id=${2}}${3:, index=${4}}${5:, value=${6}})$0"],
+		"description": "The function changes the contents of an array by adding new elements in place."
+	},
+	"array.max()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.max()",
+		"body": ["array.min(${1:id=${2}})$0"],
+		"description": "The function returns the element with the largest value from a given array."
+	},
+	"array.min()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.min()",
+		"body": ["array.min(${1:id=${2}})$0"],
+		"description": "The function returns the element with the lowest value from a given array."
+	},
+	"array.newbool()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.newbool()",
+		"body": ["array.newbool(${1:size=${2}}${3:, initial_value=${4}})$0"],
+		"description": "The function creates a new array object."
+	},
+	"array.newcolor()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.newcolor()",
+		"body": ["array.newcolor(${1:size=${2}}${3:, initial_value=${4}})$0"],
+		"description": "The function creates a new array object."
+	},
+	"array.newfloat()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.newfloat()",
+		"body": ["array.newfloat(${1:size=${2}}${3:, initial_value=${4}})$0"],
+		"description": "The function creates a new array object."
+	},
+	"array.newint()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.newint()",
+		"body": ["array.newint(${1:size=${2}}${3:, initial_value=${4}})$0"],
+		"description": "The function creates a new array object."
+	},
+	"array.pop()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.pop()",
+		"body": ["array.pop(${1:id=${2}})$0"],
+		"description": "The function removes the last element from an array and returns that element."
+	},
+	"array.push()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.push()",
+		"body": ["array.push(${1:id=${2}}${3:, value=${4}})$0"],
+		"description": "The function appends values to an array."
+	},
+	"array.remove()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.remove()",
+		"body": ["array.remove(${1:id=${2}}${3:, index=${4}})$0"],
+		"description": "The function changes the contents of an array by removing an existing element with the specified index."
+	},
+	"array.set()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.set()",
+		"body": ["array.set(${1:id=${2}}${3:, index=${4}}${5:, value=${6}})$0"],
+		"description": "The function replaces the existing element that has the specified index with a new value."
+	},
+	"array.size()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.size()",
+		"body": ["array.size(${1:id=${2}})$0"],
+		"description": "The function returns the number of elements in an array."
+	},
+	"array.slice()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.slice()",
+		"body": ["array.slice(${1:id=${2}}${3:, index_from=${4}}${5:, index_to=${6}})$0"],
+		"description": "The function creates a slice from an existing array. If an object from the slice changes, the changes are applied to both the new and the original arrays."
+	},
+	"array.sort()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.sort()",
+		"body": ["array.sort(${1:id=${2}}${3:, order=${4}})$0"],
+		"description": "The function sorts elements of an array."
+	},
+	"array.sum()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.sum()",
+		"body": ["array.sum(${1:id=${2}})$0"],
+		"description": "The function returns the sum of array's elements."
+	},
+
 	//-------------------------------------------------------------------------------
 	//-------------------------------------------------------------------------------
 	//-------------------------------------------------------------------------------
