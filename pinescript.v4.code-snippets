@@ -1432,25 +1432,25 @@
 		"body": ["array.min(${1:id=${2}})$0"],
 		"description": "The function returns the element with the lowest value from a given array."
 	},
-	"array.newbool()": {
+	"array.new_bool()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.newbool()",
 		"body": ["array.newbool(${1:size=${2}}${3:, initial_value=${4}})$0"],
 		"description": "The function creates a new array object."
 	},
-	"array.newcolor()": {
+	"array.new_color()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.newcolor()",
 		"body": ["array.newcolor(${1:size=${2}}${3:, initial_value=${4}})$0"],
 		"description": "The function creates a new array object."
 	},
-	"array.newfloat()": {
+	"array.new_float()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.newfloat()",
 		"body": ["array.newfloat(${1:size=${2}}${3:, initial_value=${4}})$0"],
 		"description": "The function creates a new array object."
 	},
-	"array.newint()": {
+	"array.new_int()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.newint()",
 		"body": ["array.newint(${1:size=${2}}${3:, initial_value=${4}})$0"],
