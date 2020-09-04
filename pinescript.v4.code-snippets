@@ -1384,6 +1384,12 @@
 	/////////////////////////////////
 	//*** UPDATE V4 - Arrays:   ***//
 	/////////////////////////////////
+	"array.avg()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.avg()",
+		"body": ["array.avg(${1:id=${2}})$0"],
+		"description": "The function returns the mean of an array's elements."
+	},
 	"array.clear()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.clear()",
@@ -1402,6 +1408,12 @@
 		"body": ["array.copy(${1:id=${2}})$0"],
 		"description": "The function creates a copy of an existing array."
 	},
+	"array.covariance()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.covariance()",
+		"body": ["array.covariance(${1:id1=${2}}${3:, id2=${4}})$0"],
+		"description": "The function returns the covariance of two arrays."
+	},
 	"array.fill()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.fill()",
@@ -1414,11 +1426,29 @@
 		"body": ["array.get(${1:id=${2}}${3:, index=${4}})$0"],
 		"description": "The function returns an element with the specified index."
 	},
+	"array.includes()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.includes()",
+		"body": ["array.includes(${1:id=${2}}${3:, value=${4}})$0"],
+		"description": "The function returns true if the value was found in an array, false otherwise."
+	},
+	"array.indexof()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.indexof()",
+		"body": ["array.indexof(${1:id=${2}}${3:, value=${4}})$0"],
+		"description": "The function returns the index of the first occurrence of the value, or -1 if the value is not found."
+	},
 	"array.insert()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.insert()",
 		"body": ["array.insert(${1:id=${2}}${3:, index=${4}}${5:, value=${6}})$0"],
 		"description": "The function changes the contents of an array by adding new elements in place."
+	},
+	"array.lastindexof()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.lastindexof()",
+		"body": ["array.lastindexof(${1:id=${2}}${3:, value=${4}})$0"],
+		"description": "The function returns the index of the last occurrence of the value, or -1 if the value is not found."
 	},
 	"array.max()": {
 		"scope": "pine, pinescript",
@@ -1426,11 +1456,23 @@
 		"body": ["array.min(${1:id=${2}})$0"],
 		"description": "The function returns the element with the largest value from a given array."
 	},
+	"array.median()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.median()",
+		"body": ["array.median(${1:id=${2}})$0"],
+		"description": "The function returns the median of an array's elements."
+	},
 	"array.min()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.min()",
 		"body": ["array.min(${1:id=${2}})$0"],
 		"description": "The function returns the element with the lowest value from a given array."
+	},
+	"array.mode()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.mode()",
+		"body": ["array.mode(${1:id=${2}})$0"],
+		"description": "The function returns the mode of an array's elements. If there are several values with the same frequency, it returns the smallest value."
 	},
 	"array.new_bool()": {
 		"scope": "pine, pinescript",
@@ -1474,11 +1516,23 @@
 		"body": ["array.remove(${1:id=${2}}${3:, index=${4}})$0"],
 		"description": "The function changes the contents of an array by removing an existing element with the specified index."
 	},
+	"array.reverse()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.reverse()",
+		"body": ["array.reverse(${1:id=${2}})$0"],
+		"description": "The function reverses an array. The first array element becomes the last, and the last array element becomes the first."
+	},
 	"array.set()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.set()",
 		"body": ["array.set(${1:id=${2}}${3:, index=${4}}${5:, value=${6}})$0"],
 		"description": "The function replaces the existing element that has the specified index with a new value."
+	},
+	"array.shift()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.shift()",
+		"body": ["array.shift(${1:id=${2}})$0"],
+		"description": "The function removes an array's first element and returns its value."
 	},
 	"array.size()": {
 		"scope": "pine, pinescript",
@@ -1498,11 +1552,35 @@
 		"body": ["array.sort(${1:id=${2}}${3:, order=${4}})$0"],
 		"description": "The function sorts elements of an array."
 	},
+	"array.standardize()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.standardize()",
+		"body": ["array.standardize(${1:id=${2}})$0"],
+		"description": "The function returns the array of standardized elements."
+	},
+	"array.stdev()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.stdev()",
+		"body": ["array.stdev(${1:id=${2}})$0"],
+		"description": "The function returns the standard deviation of an array's elements."
+	},
 	"array.sum()": {
 		"scope": "pine, pinescript",
 		"prefix": "array.sum()",
 		"body": ["array.sum(${1:id=${2}})$0"],
 		"description": "The function returns the sum of array's elements."
+	},
+	"array.unshift()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.unshift()",
+		"body": ["array.unshift(${1:id=${2}}${3:, value=${4}})$0"],
+		"description": "The function inserts the value at the beginning of the array."
+	},
+	"array.variance()": {
+		"scope": "pine, pinescript",
+		"prefix": "array.variance()",
+		"body": ["array.variance(${1:id=${2}})$0"],
+		"description": "The function returns the variance of an array's elements."
 	},
 
 	//-------------------------------------------------------------------------------
