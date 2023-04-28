@@ -1,3 +1,6 @@
+# ***THIS IS DEPRECATED***
+the snippets code provided is for V4 of Pinescript.
+
 followed this tut:
 https://github.blog/2016-02-01-working-with-submodules/
 
